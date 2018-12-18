@@ -1,9 +1,37 @@
-<ion-content class="colorchange">
-  <ion-list class="colorchange">
-    <ion-item class="avataritem">
-      <ion-avatar class="colorchange">
-      <img src="../assets/imgs/user_avatar.png">
-    </ion-avatar>
-    </ion-item>
+<ion-content text-center>
+  <div class="color-change">
+    <ion-toolbar style="padding-top:2rem;" color="transparent">
+      <ion-buttons right>
+        <button ion-button icon-only>
+          <ion-icon name="exit" color="light"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+    <img src="../assets/imgs/user_avatar.png" class="profile-img">
+  </div>
+  <ion-list text-left class="info-list">
+    <ion-item-group>
+
+      <ion-item-divider>Profile informations</ion-item-divider>
+      <ion-item>
+        <ion-label color="dark" fixed>Full Name</ion-label>
+        <ion-note item-end>Charfi Omar</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label style="opacity:1; color:#222;">Date of birth</ion-label>
+        <ion-note item-end>18 July 1994</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label color="dark" fixed>Departement</ion-label>
+        <ion-note item-end>Computer science</ion-note>
+      </ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider>Settings</ion-item-divider>
+      <ion-item>
+        <ion-label color="dark" fixed>Account type</ion-label>
+        <ion-note item-end>Rider & Driver</ion-note>
+      </ion-item>
+    </ion-item-group>
   </ion-list>
 </ion-content>

@@ -10,10 +10,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProfilePage } from "../pages/profile/profile";
 import { HomePage } from "../pages/home/home";
 import { RidesPage } from "../pages/rides/rides";
+import { LoginPage } from "../pages/login/login";
 
 @NgModule({
   declarations: [
     MyApp,
+    LoginPage,
     ProfilePage,
     HomePage,
     RidesPage,
@@ -27,6 +29,7 @@ import { RidesPage } from "../pages/rides/rides";
   entryComponents: [
     MyApp,
     ProfilePage,
+    LoginPage,
     HomePage,
     RidesPage,
     TabsPage

@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-profile',
-  templateUrl: 'profile.html',
+  selector: 'page-login',
+  templateUrl: 'login.html',
   styles:[
-    './profile.scss',
+    './login.scss',
   ]
 })
-export class ProfilePage {
+export class LoginPage {
 
   constructor(public navCtrl: NavController) {
 
