@@ -1,3 +1,54 @@
 page-register-modal {
+  .login-content {
+    background: #2c3e50;
 
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .login-box {
+      background: #EEE8AA;
+      padding: 4rem 20px 0;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      border-radius: 0.5rem;
+      width: 100%;
+    }
+
+    ion-row {
+      align-items: center;
+      text-align: center;
+    }
+
+    ion-item {
+      border-radius: 30px !important;
+      padding-left: 30px !important;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      border: 1px solid #ffffff;
+      border-bottom: 0 !important;
+      box-shadow: none !important;
+    }
+
+    .signup-col {
+      margin: 0 16px;
+      padding-bottom: 10px;
+    }
+
+    .item-inner {
+      border-bottom-color: #ffffff !important;
+      box-shadow: none !important;
+    }
+
+    .submit-btn {
+      background: #D1D1D1;
+      border-radius: 30px !important;
+      border: 1px solid #fff;
+    }
+
+    .register-btn {
+      color: #f53d3d;
+      font-size: 0.8em;
+      margin-top: 2rem;
+    }
+  }
 }

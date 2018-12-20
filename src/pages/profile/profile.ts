@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
 import { TabsProvider } from "../../providers/tabs/tabs";
 
 @Component({
@@ -13,12 +13,33 @@ export class ProfilePage {
 
   constructor(public navCtrl: NavController
     , public navParams: NavParams
-    , public tabsProvider: TabsProvider) {
+    , public tabsProvider: TabsProvider
+    , public alertCtrl: AlertController
+    , public loadingCtrl: LoadingController) {
 
   }
 
-  logout(){
-    this.tabsProvider.updateLoggedState(false);
+  logout() {
+    const confirm = this.alertCtrl.create({
+      title: "Logout ?",
+      buttons: [
+        {
+          text: 'Cancel',
+        },
+        {
+          text: 'Logout',
+          handler: () => {
+            const loader = this.loadingCtrl.create({
+              content: "Logging out...",
+              duration: 1500
+            });
+            loader.present();
+            this.tabsProvider.updateLoggedState(false);
+          }
+        }
+      ]
+    });
+    confirm.present();
   }
 
 }

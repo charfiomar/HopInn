@@ -1,18 +1,59 @@
-<!--
-  Generated template for the RegisterModalPage page.
+<ion-content class="login-content" padding>
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <div class="login-box">
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+        <form #registerForm="ngForm">
+          <ion-row>
+            <ion-col>
+              <ion-list inset>
 
-  <ion-navbar>
-    <ion-title>register-modal</ion-title>
-  </ion-navbar>
+                <ion-item>
+                  <ion-input type="text" placeholder="Full name" name="fullName" required></ion-input>
+                </ion-item>
 
-</ion-header>
+                <ion-item>
+                  <ion-label>Date of birth</ion-label>
+                  <ion-datetime displayFormat="DD MMM YYYY"></ion-datetime>
+                </ion-item>
 
+                <ion-item>
+                  <ion-label>Department</ion-label>
+                  <ion-select>
+                    <ion-option>Software Engineering</ion-option>
+                    <ion-option>Mechanical Engineering</ion-option>
+                    <ion-option>Process Engineering</ion-option>
+                    <ion-option>Electrical Engineering</ion-option>
+                    <ion-option>Architecture</ion-option>
+                    <ion-option>Business</ion-option>
+                  </ion-select>
+                </ion-item>
 
-<ion-content padding>
+                <ion-item>
+                  <ion-input type="email" placeholder="Email" name="email" required></ion-input>
+                </ion-item>
 
+                <ion-item>
+                  <ion-input type="password" placeholder="Password" name="password" required></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input type="password" placeholder="Password confirmation" name="password" required></ion-input>
+                </ion-item>
+
+              </ion-list>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col class="signup-col">
+              <button ion-button class="submit-btn" full type="submit">Register</button>
+              <button ion-button class="register-btn" clear (click)="dismiss()">Cancel</button>
+            </ion-col>
+          </ion-row>
+
+        </form>
+      </div>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler, NavController } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { TabsPage } from '../pages/tabs/tabs';
@@ -12,6 +12,7 @@ import { HomePage } from "../pages/home/home";
 import { RidesPage } from "../pages/rides/rides";
 import { LoginPage } from "../pages/login/login";
 import { TabsProvider } from '../providers/tabs/tabs';
+import { RegisterModalPageModule } from "../pages/register-modal/register-modal.module";
 
 @NgModule({
   declarations: [
@@ -20,11 +21,12 @@ import { TabsProvider } from '../providers/tabs/tabs';
     ProfilePage,
     HomePage,
     RidesPage,
-    TabsPage
+    TabsPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    RegisterModalPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -33,7 +35,7 @@ import { TabsProvider } from '../providers/tabs/tabs';
     LoginPage,
     HomePage,
     RidesPage,
-    TabsPage
+    TabsPage,
   ],
   providers: [
     StatusBar,

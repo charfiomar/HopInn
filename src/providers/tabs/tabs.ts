@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { NavController } from "ionic-angular";
-import { TabsPage } from "../../pages/tabs/tabs";
 import { Subject } from "rxjs/Subject";
 import { Observable } from "rxjs/Observable";
 
