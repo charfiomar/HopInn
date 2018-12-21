@@ -1,6 +1,21 @@
 page-login {
+
+  .app-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 6rem !important;
+    text-align: center;
+    width: 100%;
+    color: #EEE8AA;
+    margin-bottom: 10vh;
+    margin-top: 3rem !important;
+  }
+
   .login-content {
-    background: #2c3e50;
+    background-image: url("../assets/imgs/hop_inn.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
 
     ::-webkit-scrollbar {
       display: none;

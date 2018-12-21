@@ -15,4 +15,7 @@ export class HomePage {
 
   }
 
+  goToRides(){
+    this.navCtrl.parent.select(1);
+  }
 }

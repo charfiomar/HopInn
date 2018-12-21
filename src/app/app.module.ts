@@ -13,6 +13,8 @@ import { RidesPage } from "../pages/rides/rides";
 import { LoginPage } from "../pages/login/login";
 import { TabsProvider } from '../providers/tabs/tabs';
 import { RegisterModalPageModule } from "../pages/register-modal/register-modal.module";
+import { MyRidesPageModule } from "../pages/my-rides/my-rides.module";
+import { FromToUniversityPageModule } from "../pages/from-to-university/from-to-university.module";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { RegisterModalPageModule } from "../pages/register-modal/register-modal.
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    RegisterModalPageModule
+    RegisterModalPageModule,
+    MyRidesPageModule,
+    FromToUniversityPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -1,6 +1,10 @@
 page-register-modal {
   .login-content {
-    background: #2c3e50;
+    background-image: url("../assets/imgs/hop_inn.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
 
     ::-webkit-scrollbar {
       display: none;

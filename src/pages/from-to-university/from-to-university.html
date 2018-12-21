@@ -1,0 +1,203 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title *ngIf="fromUniversity">from university</ion-title>
+    <ion-title *ngIf="!fromUniversity">To university</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list *ngIf="fromUniversity">
+
+    <ion-item>
+
+      <ion-card>
+
+        <ion-item class="owner">
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/marty-avatar.png">
+          </ion-avatar>
+          <h2>Faiez Abid</h2>
+          <p>2 hours ago</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="arrow-down" item-start large></ion-icon>
+          <h2>Intenational Institute of technology</h2>
+          <p>M'harza Road km 1.5</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="navigate" item-start large></ion-icon>
+          <h2>Arrival point</h2>
+          <p>Sfax Bab bhar</p>
+        </ion-item>
+
+        <ion-item class="days-of-week">
+          <span item-start class="dow-yes">L</span>
+          <span item-start>M</span>
+          <span item-start class="dow-yes">M</span>
+          <span item-start>J</span>
+          <span item-start>V</span>
+          <span item-start>S</span>
+        </ion-item>
+
+        <ion-item>
+          <span item-start>10 min</span>
+          <span item-start>(2 km)</span>
+          <span item-start>3 DT</span>
+          <button ion-button icon-start clear item-end>
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-item>
+
+      </ion-card>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-card>
+
+        <ion-item class="owner">
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/marty-avatar.png">
+          </ion-avatar>
+          <h2>Faiez Abid</h2>
+          <p>3 hours ago</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="arrow-down" item-start large></ion-icon>
+          <h2>Intenational Institute of technology</h2>
+          <p>M'harza Road km 1.5</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="navigate" item-start large></ion-icon>
+          <h2>Arrival point</h2>
+          <p>Sfax Bab Jebli</p>
+        </ion-item>
+
+        <ion-item class="days-of-week">
+          <span item-start class="dow-yes">L</span>
+          <span item-start>M</span>
+          <span item-start class="dow-yes">M</span>
+          <span item-start class="dow-yes">J</span>
+          <span item-start>V</span>
+          <span item-start>S</span>
+        </ion-item>
+
+        <ion-item>
+          <span item-start>10 min</span>
+          <span item-start>(2 km)</span>
+          <span item-start>2 DT</span>
+          <button ion-button icon-start clear item-end>
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-item>
+
+      </ion-card>
+
+    </ion-item>
+
+  </ion-list>
+  <ion-list *ngIf="!fromUniversity">
+
+    <ion-item>
+
+      <ion-card>
+
+        <ion-item class="owner">
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/maria-avatar.jpg">
+          </ion-avatar>
+          <h2>Maha Hajjej</h2>
+          <p>5 hours ago</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="arrow-down" item-start large></ion-icon>
+          <h2>Departure point</h2>
+          <p>Sfax Bab bhar</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="navigate" item-start large></ion-icon>
+          <h2>Intenational Institute of technology</h2>
+          <p>M'harza Road km 1.5</p>
+        </ion-item>
+
+        <ion-item class="days-of-week">
+          <span item-start class="dow-yes">L</span>
+          <span item-start>M</span>
+          <span item-start class="dow-yes">M</span>
+          <span item-start>J</span>
+          <span item-start>V</span>
+          <span item-start>S</span>
+        </ion-item>
+
+        <ion-item>
+          <span item-start>10 min</span>
+          <span item-start>(2 km)</span>
+          <span item-start>3.5 DT</span>
+          <button ion-button icon-start clear item-end>
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-item>
+
+      </ion-card>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-card>
+
+        <ion-item class="owner">
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/nick-avatar.png">
+          </ion-avatar>
+          <h2>Charfi Omar</h2>
+          <p>2 days ago</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="arrow-down" item-start large></ion-icon>
+          <h2>Departure point</h2>
+          <p>Gremda Road km 2</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="navigate" item-start large></ion-icon>
+          <h2>Intenational Institute of technology</h2>
+          <p>M'harza Road km 1.5</p>
+        </ion-item>
+
+        <ion-item class="days-of-week">
+          <span item-start class="dow-yes">L</span>
+          <span item-start>M</span>
+          <span item-start class="dow-yes">M</span>
+          <span item-start class="dow-yes">J</span>
+          <span item-start>V</span>
+          <span item-start>S</span>
+        </ion-item>
+
+        <ion-item>
+          <span item-start>10 min</span>
+          <span item-start>(2 km)</span>
+          <span item-start>5 DT</span>
+          <button ion-button icon-start clear item-end>
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-item>
+
+      </ion-card>
+
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { MyRidesPage } from "../my-rides/my-rides";
+import { FromToUniversityPage } from "../from-to-university/from-to-university";
 
 @Component({
   selector: 'page-rides',
@@ -15,4 +17,13 @@ export class RidesPage {
 
   }
 
+  goToMyRides(){
+    this.navCtrl.push(MyRidesPage);
+  }
+  goToUniversty(){
+    this.navCtrl.push(FromToUniversityPage, {fromUniversity : false});
+  }
+  goFromUniversity(){
+    this.navCtrl.push(FromToUniversityPage, {fromUniversity : true});
+  }
 }
